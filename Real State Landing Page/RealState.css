@@ -1,0 +1,401 @@
+:root {
+  /* Colors */
+  --primary-color: #C1DEE8;
+  --secondary-color: #FBD9B9;
+  --buttom-color: #1F1F1F;
+  --gray-color: #BEBEBE;
+  --gray2-color: #FAFAFA;
+  --white-color: #FEFEFF;
+  /* Typography */
+  --font-size-xs: 9px;
+  --font-size-sm: 12px;
+  --font-size-base: 16px;
+  --font-size-lg: 21px;
+  --font-size-xl: 28px;
+  --font-size-2xl: 38px;
+  --font-size-3xl: 50px;
+  --font-size-4xl: 67px;
+  --font-size-5xl: 89px;
+}
+
+*{ 
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+header svg {
+  width: 24px;
+  height: 24px;
+} 
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--gray2-color);
+  border-radius: 70px;
+  height: 90px;
+  color: #000000;
+  margin: 20px;
+  box-shadow: 0 4px 12px rgb(0, 0, 0 , 0.1);
+  padding: 50px 20px;
+
+}
+.header-container img {
+  width: 100px;
+}
+
+nav{
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 16px;
+  /*margin: 34px 30px;
+  border-radius: 70px;
+  width: 1288px;
+  height: 90px;
+  color: black;*/
+}
+
+
+.contact-us{
+  display: flex;
+  gap: 45px;
+  align-items: center;
+}
+
+.contact-us button{
+  border: none;
+  background: none;
+  font-size: var(--font-size-sm);
+}
+
+.contact-us button:last-child{
+  border: none;
+  width: 158;
+  height: 60;
+  opacity: 1;
+  top: 47px;
+  left: 1228px;
+  border: 1px solid var(--gray-color);
+  border-radius: 40px;
+  padding: 15px 35px;
+  background-color: var(--white-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-us button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.align-center{
+    width: 693px;
+    height: 120px;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.welc {
+  font-weight: 400;
+  font-size: 16;
+}
+
+.welcome {
+   padding: 0px;
+   max-width: 400px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.main-welcome {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.emailinput input {
+  /*width: 400px;
+  height: 60px;
+  padding: 16px 25px;*/
+  width: 100%;
+  height: 50px;
+  padding: 0 120px 0 25px;
+  border: none;
+  border-radius: 40px;
+  padding: 16px 25px;
+  font-weight: 400px;
+  font-size: 16px;
+}
+
+.emailinput button {
+  width: 168px;
+  height: 50px;
+  background-color: var(--buttom-color);
+  border-radius: 40px;
+  color: var(--white-color);
+  position: absolute;
+  margin-left: 232px;
+  top: 0;
+  left: 0;
+  font-weight: 600px ;
+  font-size: 16px;
+}
+
+.emailinput {
+  position: relative;
+  width: 400px;
+  height: 50px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  background-color: var(--white-color);
+}
+
+.image-box {
+  position: relative; 
+}
+
+.image-box img {
+  width: 700px;         
+  position: absolute;
+  right: 0;         
+  top: -250px;        
+}
+
+.image-box .rightimg {
+  width: 600px;
+  position: absolute;        
+  top: -260px; 
+}
+
+.sub {
+  max-width: 600px;
+  position: relative;
+  bottom: 15px;
+  gap: 20px;
+}
+
+main, .subscribtion {
+  height: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  /*flex-direction: row; and delete line*/
+  /*padding: 20 0 60px ;        /*flex-direction: row; and delete line*/
+  padding-right: 0;
+  padding-left: 60px;
+  padding-bottom: 20;
+  padding-top: 0px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  margin: 30px;
+}
+
+.subscribtion {
+  height: 450px;
+}
+
+.sub-h {
+  font-size: 50px;
+  font-weight: 600px;
+}
+
+.sub-p {
+  max-width: 400px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.group9 {
+ text-align: center;
+ margin-top: 150px;
+}
+
+.text {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.group9 h2 {
+    font-size: 50px;
+    margin: 0px;
+}
+
+.groups {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px;
+    gap: 160px;
+}
+
+.group1 {
+  text-align: left;
+  max-width: 400px; 
+}
+.group1 h3 {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.group1 p {
+    font-size: 16px;
+    margin:0px;
+}
+
+.group15 {
+    padding-top: 30px;
+    margin-top: 100px;
+}
+
+.group15 p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+.group15 h1 {
+    font-size: 50px;
+    margin: 0px;
+    padding-left: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 30px;
+    margin: 0px 70px;
+}
+
+.card {
+    background-color: #f6f7f9;
+    border-radius: 16px;
+    max-width: 350px;
+    min-width: 280px;
+}
+
+.card-content {
+    padding: 20px;
+    width: 100%;
+}
+
+.img {
+    width: 100%;
+    height: 263px;
+}
+
+
+.cards h3 {
+    font-size: 21px;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stars img {
+    padding: 10px;
+    width: 105px;
+    height: 35px;
+}
+
+.stars span {
+    font-size: 20px;
+
+}
+
+.group21 {
+  margin-top: 100px;
+  margin-bottom: 100px ;
+}
+.group21 h2 {
+  text-align: center;
+  margin-bottom:40px;
+  color: #000000;
+  font-size: 45px;
+}
+
+.book {
+  display: flex;
+  justify-content: center;
+  margin-bottom:40px;
+  gap: 200px;
+}
+
+.book-content {
+  max-width: 505px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-content h3 {
+  margin-bottom: 15px;
+  color: #000000;
+  font-size: 38px;
+  word-wrap: none;
+}
+
+.book-content p {
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  margin-bottom:20px;
+}
+
+.book-now {
+  padding: 10px 20px;
+  background-color: var(--buttom-color);
+  color: #ffffff;
+  border-radius:40px;
+}
+
+.read-more {
+  padding: 10px 20px;
+  color: var(--buttom-color);
+  border: 2px solid #1f1f1f;
+  border-radius: 40px;
+}
+
+.nums {
+  display: flex;
+  gap:50px;
+  margin-top: 20px;
+}
+
+.nums h2 {
+  color: #000000;
+  font-size: 60px;
+  margin-bottom:5px;
+}
+
+.book-image img {
+  width: 400px;
+  height: 430px;
+  border-radius: 10px;
+  opacity: 0.8;
+  background-color: linear-gradient(var(--primary-color), var(--secondary-color));
+}
