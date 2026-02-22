@@ -1,0 +1,45 @@
+body{
+  background-color: hsl(30, 54%, 90%);
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.operation{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px 30px 30px;
+  margin: 20px 100px;
+  border-radius: 10px;
+}
+
+.operation div input {
+  background-color: rgb(247, 239, 231);
+  border: none;
+  border-radius: 3px;
+  width: 700px;
+  height: 30px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.operation button{
+  height: 30px;
+  background-color: rgb(140, 100, 48);
+  border: none;
+  border-radius: 3px;
+  font-size: 20px ;
+  width: 732px;
+  margin-bottom: 10px;
+}
+
+.operation button:hover{
+  background-color: rgb(78, 56, 27);
+  color: #fff;
+}
+
+.operation div{
+  display: flex;
+  flex-direction: column;
+}
