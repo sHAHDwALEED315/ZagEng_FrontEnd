@@ -1,9 +1,9 @@
 import Card from "./Card"
-import useFetch from "./useFetch";
+import useFetch from "../useFetch";
 
 const ProductCards = () => {
 
-  const productstyle = { display: "flex"};
+  const productstyle = { display: "flex" , flexWrap: "wrap", gap: "20px"};
 
   const { data, loading, error } = useFetch(
     "https://fakestoreapi.com/products"
